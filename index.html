@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Noor's Amazon Shop</title>
   <style>
     * {
       box-sizing: border-box;
-      margin:10;
-      padding: 20;
+      margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     body {
@@ -33,8 +33,8 @@
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
       padding: 20px;
     }
     .card {
@@ -44,31 +44,36 @@
       overflow: hidden;
       text-align: center;
       transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .card:hover {
       transform: translateY(-5px);
     }
     .card img {
-      width: 40%;
-      height: auto;
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      padding: 10px;
     }
     .card h3 {
       padding: 10px;
       font-size: 1.2em;
     }
     .card p {
-      padding: 0 20px 10px;
+      padding: 0 15px 10px;
       font-size: 0.9em;
       color: #666;
     }
     .card a {
-      display: inline-block;
       background: #ff9900;
       color: white;
-      padding: 40px ;
-      margin: 15px 0;
+      padding: 10px 20px;
+      margin: 15px auto;
       border-radius: 5px;
-      text-decoration: TIMES NEW ROMAN;
+      text-decoration: none;
+      width: fit-content;
       transition: background 0.2s ease;
     }
     .card a:hover {
@@ -94,26 +99,31 @@
   </section>
 
   <section class="products">
+    <!-- Product 1 -->
     <div class="card">
-      <img src="https://noorfatima-23.github.io/Noor-Shop24/first.png">
+      <img src="https://noorfatima-23.github.io/Noor-Shop24/first.png" alt="Nike Shoes">
       <h3>Nike Low-Top Trainer Sneaker</h3>
       <p>Comfortable, stylish black sneakers perfect for everyday wear.</p>
-      <a href="https://www.amazon.com/Nike-Low-Top-Trainer-Sneaker-Black/dp/B077RWS9F3?tag=techwithnoor-20">Buy Now</a>  </div>
- <section class="products">
+      <a href="https://www.amazon.com/Nike-Low-Top-Trainer-Sneaker-Black/dp/B077RWS9F3?tag=techwithnoor-20">Buy Now</a>
+    </div>
+
+    <!-- Product 2 -->
     <div class="card">
- <img src="https://noorfatima-23.github.io/Noor-Shop24/second.png">
-      <h3>AI Translation Earbuds Real Time 164 Languages 80H Playtime Translator Ear Buds Audifonos</h3>
-      <p>Comfortable, Wireless Earphones Bluetooth Headphones for Travel Business Meeting Learning White.</p>
-      <a href="https://www.amazon.com/dp/B0F7LS8FWQ?_encoding=UTF8&ie=UTF8&sp_csd=d2lkZ2V0TmFtZT1zcF9yaGZfeW95&pd_rd_w=a5sCR&content-id=amzn1.sym.87a48bff-0d65-465c-9848-dfd8668d09df&pf_rd_p=87a48bff-0d65-465c-9848-dfd8668d09df&pf_rd_r=RY2JFPMME6RRCEKYXA3E&pd_rd_wg=qwgFw&pd_rd_r=14f93c46-0d59-45c8-919e-cea0008501f5&th=1&linkCode=ll1&tag=techwithnoor-20&linkId=07ba6509b5fd5c93ef0e352924c4ac7e&language=en_US&ref_=as_li_ss_tl">Buy Now
-  </a> </div>
-    <section class="products">
-   <div class="card">
- <img src="https://noorfatima-23.github.io/Noor-Shop24/third.png">
-      <h3>Feethit Mens Slip On Walking Shoes Lightweight Breathable Non Slip Running Shoes</h3>
-      <p>Ultra Breathable & Lightweight - Feethit mens sneakers uppers are made of breathable material, there are thousands of densely ventilated holes in the upper that provide you with ultra lightweight support and breathability. and the lining of the sneakers is reinforced with soft foam to make you more comfortable wearing. .</p>
-      <a href="https://www.amazon.com/dp/B0F7LS8FWQ?_encoding=UTF8&ie=UTF8&sp_csd=d2lkZ2V0TmFtZT1zcF9yaGZfeW95&pd_rd_w=a5sCR&content-id=amzn1.sym.87a48bff-0d65-465c-9848-dfd8668d09df&pf_rd_p=87a48bff-0d65-465c-9848-dfd8668d09df&pf_rd_r=RY2JFPMME6RRCEKYXA3E&pd_rd_wg=qwgFw&pd_rd_r=14f93c46-0d59-45c8-919e-cea0008501f5&th=1&linkCode=ll1&tag=techwithnoor-20&linkId=07ba6509b5fd5c93ef0e352924c4ac7e&language=en_US&ref_=as_li_ss_tl">Buy Now
-  </a> </div>
-    <!-- More cards can be added here -->
+      <img src="https://noorfatima-23.github.io/Noor-Shop24/second.png" alt="Translation Earbuds">
+      <h3>AI Translation Earbuds - Real Time</h3>
+      <p>Wireless Bluetooth earbuds, real-time translation in 164 languages. Great for travel and learning.</p>
+      <a href="https://www.amazon.com/dp/B0F7LS8FWQ?tag=techwithnoor-20">Buy Now</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+      <img src="https://noorfatima-23.github.io/Noor-Shop24/third.png" alt="Feethit Shoes">
+      <h3>Feethit Men's Slip On Shoes</h3>
+      <p>Lightweight and breathable slip-on running shoes for comfort and style.</p>
+      <a href="https://www.amazon.com/dp/B0F7LS8FWQ?tag=techwithnoor-20">Buy Now</a>
+    </div>
+
+    <!-- You can add more products here -->
   </section>
 
   <footer>
